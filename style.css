@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background: #e3f4fd;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 50px;
+}
+
+.logo {
+    margin-left: -30px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #1e07f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    background: #aee8ff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(img/fondo3.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 20px; /* Para evitar que el contenido quede oculto detrás del header */
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    justify-content: baseline;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 20px 0;
+    background: #1f1d1d;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 170px;
+    width: 270px;
+    background: #171717;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(3, 213, 241, 0.897);
+    margin: 20px;
+}
+
+.box-container .box img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-top: -50px;
+    border: 3px solid #2d29f3;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #333fe9;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.price {
+    background: url(img/fondo2.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    /* background-attachment: fixed; Lo eliminamos por problemas de compatibilidad móvil */
+}
+
+.about {
+    background: #303030;
+    padding: 20px 0;
+}
+
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: -20px;
+    flex-wrap: wrap;
+    
+}
+
+.box-container2 .box {
+    width: 200px;
+    padding-bottom: 0px;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(61, 203, 238, 0.897);
+    background: #171717;
+    margin: 20px 20px;
+}
+
+.box-container2 .box img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 6px solid #2d29f3;
+}
+
+.box-container2 .box h3 {
+    font-size: 20px;
+    color: #1952f0;
+    padding-top: 10px;
+}
+
+.box-container2 .box p {
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+}
+
+.diapositivas {
+    padding: 50px 0;
+    background: #303030;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos agregados para la sección de diapositivas */
+.diapositivas-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; /* Elimina subrayado en el enlace */
+}
+
+.diapositivas-img {
+    height: 100px; 
+    border-radius: 20px;
+    /* Ajusta la altura según sea necesario */
+    margin-right: 500px;
+    margin-bottom: -80px;
+    /* Espacio entre la imagen y el título */
+}
+
+.footer-section {
+    display: flex;
+}
+
+.title {
+    margin: 0; /* Elimina márgenes adicionales */
+    color: rgb(255, 255, 255); /* Ajusta el color del texto */
+}
+@media(max-width: 768px) {
+    p {
+        padding: 0 50px;
+    }
+
+    .title {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .about {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-enlaces {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+
+
